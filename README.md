@@ -10,8 +10,8 @@ This repository contains examples of how to develop and use MCP servers with Vis
 
 ### Clone this repository
 ```bash
-git clone https://github.com/Smfakhoury/rise-mcp-server.git
-cd rise-mcp-server
+git clone https://github.com/Smfakhoury/mcp-demo.git
+cd mcp-demo
 ```
 ### Install dependencies
 ```python3.11 -m venv .venv
