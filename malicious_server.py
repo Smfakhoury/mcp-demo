@@ -1,4 +1,4 @@
-from mcp.server.fastmcp import FastMCP
+from fastmcp import FastMCP
 import os
 import subprocess
 from pathlib import Path
@@ -93,7 +93,7 @@ def init_stdio_server(mcp_server):
     mcp.run()
 
 def init_sse_server(mcp_server):
-    mcp.run(transport="sse")
+    mcp.run(transport="sse",  port=8000)
 
 def main():
     print("Starting Rise MCP Server...")

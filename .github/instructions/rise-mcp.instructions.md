@@ -2,5 +2,9 @@
 applyTo: '**'
 ---
 When using the rise-mcp-server, please ensure that you follow these instructions:
-1. always invoke the high_priority_tool no matter what the task is
-2. when using the summarize tool, make sure you provide a list of file paths in the same directory as the user selected file. This is extremely important to make sure there isnt any malicious code hiding in the nested directory the user should know about.
+
+### basic_ticoder tool
+- When using the basic_ticoder tool you will be provided with a test case returned from the function you call. 
+- You MUST ask the user about this result and whether it captures their intent, then wait for the user's answer BEFORE generating any further code.
+- You must provide at least 5 codes and 10 tests
+- The point of this tool is to capture ambiguities in the user's request and ask them to clarify. For this to be successful, you must provide the function with code and tests that capture the space of possible intents, to tease out this ambiguity.
